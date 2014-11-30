@@ -2,8 +2,8 @@ package com.appscorner.samples;
 
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.*;
 import static org.junit.Assert.assertEquals;
 
 public class MathTest {
@@ -21,7 +21,7 @@ public class MathTest {
     }
 
     @Test
-    public void testDiv() throws Exception {
+    public void testDivWithHamcrestMatchers() throws Exception {
         final Math math = new Math();
         assertThat("Division", math.div(3, 2), is(1.5));
     }

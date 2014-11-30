@@ -15,8 +15,9 @@ public class Math {
 
     public BigInteger slowFactorial(int num) {
         try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {}
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+        }
         if (num == 0) return BigInteger.ONE;
         return BigInteger.valueOf(num).multiply(slowFactorial(num - 1));
     }
